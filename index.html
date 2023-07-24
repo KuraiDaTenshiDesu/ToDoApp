@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>To-Do App</title>
 </head>
 <body>
+
+    <main class="app">
+        <h1 class="app_title">To-Do App</h1>
+
+        <div class="app_add-task">
+            <input class="app_add-task_input" type="text" name="add-task-input" id="add-task-input">
+            <button class="app_add-task_button">Add Task</button>
+        </div>
+
+        <div class="tasks">
+
+            <div class="task">
+                <h2 class="task_title">Task Name Goes Here</h2>
+                <p class="task_date">10:10 | 10.10.10</p>
+                <p class="task_time">00:00:00 | 2 hrs</p>
+
+                <div class="task_buttons">
+                    <button class="task_button task_button__start"></button>
+                    <button class="task_button task_button__check"></button>
+                    <button class="task_button task_button__delete"></button>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </main>
     
     <script type="module" src="main.js"></script>
 </body>
