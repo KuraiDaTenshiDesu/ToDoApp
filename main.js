@@ -58,6 +58,30 @@ function createTask(name) {
 
     task.append(task_title, task_date, task_time, task_buttons);
 
+    task.addEventListener('click', (event) => {
+        if (event.target.classList.contains('task_button__check')) {
+            task.classList.toggle('task__done');
+        }
+
+        if (event.target.classList.contains('task_button__delete')) {
+            let tasks = document.querySelector('.tasks');
+        
+            tasks.removeChild(task);
+        }
+        
+        if (event.target.classList.contains('task_button__start')) {
+            event.target.classList.remove('task_button__start');
+            event.target.classList.add('task_button__return');
+
+            task.classList.add('task__current');
+        } else if (event.target.classList.contains('task_button__return')) {
+            event.target.classList.remove('task_button__return');
+            event.target.classList.add('task_button__start');
+
+            task.classList.remove('task__current');
+        }
+    })
+
     return task;
 }
 

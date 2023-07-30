@@ -13,6 +13,8 @@
     --color-white: #fff;
 
     --color-white-choco: #ede6d6;
+    --color-light-green: #90ee90;
+    --color-light-blue: #add8e6;
 
     --radius-small: 10px;
     --radius-big: 30px;
@@ -153,8 +155,11 @@ body {
     &_button {
         width: 25px;
         height: 25px;
+        
         background-size: contain;
         background-repeat: no-repeat;
+
+        cursor: pointer;
 
         &__start {
             background-image: url('../img/start.png');
@@ -171,5 +176,13 @@ body {
         &__delete {
             background-image: url('../img/delete.png');
         }
+    }
+
+    &__done {
+        background: var(--color-light-green);
+    }
+
+    &__current {
+        background: var(--color-light-blue);
     }
 }

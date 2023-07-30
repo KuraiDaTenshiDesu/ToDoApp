@@ -9,6 +9,8 @@
   --color-black: #000;
   --color-white: #fff;
   --color-white-choco: #ede6d6;
+  --color-light-green: #90ee90;
+  --color-light-blue: #add8e6;
   --radius-small: 10px;
   --radius-big: 30px;
   --spacing-extra-small: 5px;
@@ -131,6 +133,7 @@ body {
   height: 25px;
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .task_button__start {
   background-image: url("../img/start.png");
@@ -143,4 +146,10 @@ body {
 }
 .task_button__delete {
   background-image: url("../img/delete.png");
+}
+.task__done {
+  background: var(--color-light-green);
+}
+.task__current {
+  background: var(--color-light-blue);
 }/*# sourceMappingURL=style.css.map */
