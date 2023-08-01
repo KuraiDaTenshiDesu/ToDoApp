@@ -10,7 +10,6 @@
   --color-white: #fff;
   --color-white-choco: #ede6d6;
   --color-light-green: #90ee90;
-  --color-light-blue: #add8e6;
   --radius-small: 10px;
   --radius-big: 30px;
   --spacing-extra-small: 5px;
@@ -81,9 +80,10 @@ body {
 
 .tasks {
   width: 90%;
-  max-height: 50%;
+  max-height: 60%;
   margin: var(--spacing-medium) auto;
   padding: var(--spacing-big) var(--spacing-medium);
+  overflow-y: scroll;
 }
 
 .task {
@@ -135,12 +135,6 @@ body {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.task_button__start {
-  background-image: url("../img/start.png");
-}
-.task_button__return {
-  background-image: url("../img/return.png");
-}
 .task_button__check {
   background-image: url("../img/check.png");
 }
@@ -149,7 +143,4 @@ body {
 }
 .task__done {
   background: var(--color-light-green);
-}
-.task__current {
-  background: var(--color-light-blue);
 }/*# sourceMappingURL=style.css.map */

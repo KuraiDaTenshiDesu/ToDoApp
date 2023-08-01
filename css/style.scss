@@ -14,7 +14,6 @@
 
     --color-white-choco: #ede6d6;
     --color-light-green: #90ee90;
-    --color-light-blue: #add8e6;
 
     --radius-small: 10px;
     --radius-big: 30px;
@@ -113,9 +112,11 @@ body {
 
 .tasks {
     width: 90%;
-    max-height: 50%;
+    max-height: 60%;
     margin: var(--spacing-medium) auto;
     padding: var(--spacing-big) var(--spacing-medium);
+
+    overflow-y: scroll;
 }
 
 .task {
@@ -161,14 +162,6 @@ body {
 
         cursor: pointer;
 
-        &__start {
-            background-image: url('../img/start.png');
-        }
-
-        &__return {
-            background-image: url('../img/return.png');
-        }
-
         &__check {
             background-image: url('../img/check.png');
         }
@@ -180,9 +173,5 @@ body {
 
     &__done {
         background: var(--color-light-green);
-    }
-
-    &__current {
-        background: var(--color-light-blue);
     }
 }
